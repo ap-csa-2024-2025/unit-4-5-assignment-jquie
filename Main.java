@@ -34,17 +34,30 @@ public class Main
   }
 
   public static void uprightNumberTriangle(int N)
+{
+  for (int row = 1; row <= N; row++)
   {
-    // code solution here
+    for (int curr_num = 1; curr_num <= row; curr_num++)
+    {
+      System.out.print(curr_num + " ");
+    }
+    System.out.println();
   }
+}
 
-  public static void starTree()
+public static void starTree()
+{
+  for (int row = 0; row < 9; row++)
   {
-    // code solution here
-  }
+    for (int space_count = 0; space_count < row; space_count++)
+    {
+      System.out.print(" ");
+    }
 
-  public static void multTable()
-  {
-    // code solution here
+    for (int star_count = row; star_count < 9; star_count++)
+    {
+      System.out.print("* ");
+    }
+    System.out.println();
   }
 }
